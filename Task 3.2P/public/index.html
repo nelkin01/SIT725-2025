@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>SIT 725 Task 3.2P</title>
+ <meta name="description" content="basic template for SIT 725 Prac 3">
+ <meta name="author" content="SitePoint">
+ <meta property="og:title" content="SIT 725 Prac 3">
+ <meta property="og:type" content="website">
+ <meta property="og:description" content="basic template for SIT 725 Task 3.2P">
+ <!--Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <!--Custom Style Sheet-->
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <nav>
+ <div class="nav-wrapper navbar-size">
+   <a href="#" class="brand-logo"><img class="user-image-size" src="images/user.png" /></a>
+   <ul id="nav-mobile" class="right hide-on-med-and-down">
+     <li><a target="_blank" href="https://www.linkedin.com/in/nelkineldho/">LinkedIn</a></li>
+   </ul>
+ </div>
+ </nav>
+
+ <main class="main-body">
+   <div class="container">
+     <div class="row">
+       <div class="col s12 center-align">
+        <h1 class="header">Bike Store by Nelkin</h1>
+         <h3 id="heading">Welcome to SIT 725 Task 3.2P</h3>
+         <p class="flow-text">This is a demo application that tries to use a few components from materialize and through this practical we try to have some fun with Materialize and its components to Demonstrate a Bike <Samp></Samp>tore</p>
+       </div>
+       <div class="col s12 center-align">
+         <img class="materialboxed materialboxed-image" src="images/bikes.png">
+       </div>
+       <div class="col s12 center-align">
+         <a class="waves-effect waves-light btn click-me-button modal-trigger" id="clickMeButton" href="#loginModal"><i class="material-icons left">login</i>Login</a>
+       </div>
+     </div>
+
+     <!-- Cards Section -->
+     <div class="row" style="margin-top: 60px;">
+       <div class="col s12 m4">
+         <div class="card">
+           <div class="card-image">
+             <img src="images/bmwgsa.jpeg">
+             <span class="card-title">Adventure Bike</span>
+           </div>
+           <div class="card-content">
+             <p>Perfect for off-road adventures and mountain trails.</p>
+           </div>
+           <div class="card-action">
+             <a href="#">Learn More</a>
+           </div>
+         </div>
+       </div>
+       <div class="col s12 m4">
+         <div class="card">
+           <div class="card-image">
+             <img src="images/hondacbr.jpg">
+             <span class="card-title">Road Bike</span>
+           </div>
+           <div class="card-content">
+             <p>Lightweight bike designed for speed on paved roads.</p>
+           </div>
+           <div class="card-action">
+             <a href="#">Learn More</a>
+           </div>
+         </div>
+       </div>
+       <div class="col s12 m4">
+         <div class="card">
+           <div class="card-image">
+             <img src="images/harley48.jpg">
+             <span class="card-title">Cruiser Bike</span>
+           </div>
+           <div class="card-content">
+             <p>Great balance between comfort and performance.</p>
+           </div>
+           <div class="card-action">
+             <a href="#">Learn More</a>
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <!-- New Collapsible Component -->
+     <div class="row" style="margin-top: 40px;">
+       <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons">info</i>About Us</div>
+           <div class="collapsible-body"><span>We are passionate about delivering the best bikes for all riders.</span></div>
+         </li>
+         <li>
+           <div class="collapsible-header"><i class="material-icons">store</i>Our Stores</div>
+           <div class="collapsible-body"><span>Find us in over 20 locations across Victoria, Australia.</span></div>
+         </li>
+         <li>
+           <div class="collapsible-header"><i class="material-icons">phone</i>Contact</div>
+           <div class="collapsible-body"><span>Email: info@bikestore.com | Phone: 123-456-789</span></div>
+         </li>
+       </ul>
+     </div>
+   </div>
+ </main>
+
+ <!-- Login Modal Structure -->
+ <div id="loginModal" class="modal">
+   <div class="modal-content">
+     <h4>Login</h4>
+     <div class="row">
+       <form class="col s12" id="loginForm">
+         <div class="row">
+           <div class="input-field col s6">
+             <input id="first_name" type="text" class="validate" required>
+             <label for="first_name">First Name</label>
+           </div>
+           <div class="input-field col s6">
+             <input id="last_name" type="text" class="validate" required>
+             <label for="last_name">Last Name</label>
+           </div>
+         </div>
+         <div class="row">
+           <div class="input-field col s12">
+             <input id="email" type="email" class="validate" required>
+             <label for="email">Email</label>
+           </div>
+         </div>
+         <div class="row">
+           <div class="input-field col s12">
+             <input id="password" type="password" class="validate" required>
+             <label for="password">Password</label>
+           </div>
+         </div>
+         <div class="row center-align">
+           <button type="submit" class="btn waves-effect waves-light">Login</button>
+         </div>
+       </form>
+     </div>
+   </div>
+ </div>
+
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <!--Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ <script src="js/scripts.js"></script>
+</body>
+</html>
