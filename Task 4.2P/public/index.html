@@ -3,12 +3,12 @@
 <head>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>SIT 725 Task 3.2P</title>
- <meta name="description" content="basic template for SIT 725 Prac 3">
+ <title>SIT 725 Task 4.2P</title>
+ <meta name="description" content="basic template for SIT 725 Prac 4">
  <meta name="author" content="SitePoint">
- <meta property="og:title" content="SIT 725 Prac 3">
+ <meta property="og:title" content="SIT 725 Prac 4">
  <meta property="og:type" content="website">
- <meta property="og:description" content="basic template for SIT 725 Task 3.2P">
+ <meta property="og:description" content="basic template for SIT 725 Task 4.2P">
  <!--Compiled and minified CSS -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -30,8 +30,8 @@
      <div class="row">
        <div class="col s12 center-align">
         <h1 class="header">Bike Store by Nelkin</h1>
-         <h3 id="heading">Welcome to SIT 725 Task 3.2P</h3>
-         <p class="flow-text">This is a Demo Bike Store application that tries to use a few components from materialize and through this practical we try to have some fun with Materialize and its components to Demonstrate a Bike <Samp></Samp>tore</p>
+         <h3 id="heading">Welcome to SIT 725 Task 4.2P</h3>
+         <p class="flow-text">This is a Demo Bike Store application that tries to use a few components from materialize and through this practical we try to have some fun with Materialize and its components to Demonstrate a Bike. In addition, MonoDB has been integrated to save user details<Samp></Samp>tore</p>
        </div>
        <div class="col s12 center-align">
          <img class="materialboxed materialboxed-image" src="images/bikes.png">
@@ -112,33 +112,25 @@
    <div class="modal-content">
      <h4>Login</h4>
      <div class="row">
-       <form class="col s12" id="loginForm">
-         <div class="row">
-           <div class="input-field col s6">
-             <input id="first_name" type="text" class="validate" required>
-             <label for="first_name">First Name</label>
-           </div>
-           <div class="input-field col s6">
-             <input id="last_name" type="text" class="validate" required>
-             <label for="last_name">Last Name</label>
-           </div>
-         </div>
-         <div class="row">
-           <div class="input-field col s12">
-             <input id="email" type="email" class="validate" required>
-             <label for="email">Email</label>
-           </div>
-         </div>
-         <div class="row">
-           <div class="input-field col s12">
-             <input id="password" type="password" class="validate" required>
-             <label for="password">Password</label>
-           </div>
-         </div>
-         <div class="row center-align">
-           <button type="submit" class="btn waves-effect waves-light">Login</button>
-         </div>
-       </form>
+       <form action="/submit" method="POST">
+  <div class="input-field">
+    <input name="firstName" id="firstName" type="text" required>
+    <label for="firstName">First Name</label>
+  </div>
+  <div class="input-field">
+    <input name="lastName" id="lastName" type="text" required>
+    <label for="lastName">Last Name</label>
+  </div>
+  <div class="input-field">
+    <input name="email" id="email" type="email" required>
+    <label for="email">Email</label>
+  </div>
+  <div class="input-field">
+    <input name="password" id="password" type="password" required>
+    <label for="password">Password</label>
+  </div>
+  <button type="submit" class="btn">Submit</button>
+</form>
      </div>
    </div>
  </div>

@@ -7,7 +7,7 @@ $(document).ready(function() {
   $('.modal').modal();
   $('.collapsible').collapsible(); // Initialize collapsible
 
-  // Handle login form submit
+  // For login form submit
   $('#loginForm').submit(function(e) {
     e.preventDefault();
     const firstName = $('#first_name').val();
