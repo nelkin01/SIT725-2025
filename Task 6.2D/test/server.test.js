@@ -27,7 +27,7 @@ describe('Bike App API', () => {
     chai.request(app)
       .post('/submit')
       .type('form')
-      .send({ firstName: 'John', lastName: 'Doe', email: 'john@example.com', password: '123456' })
+      .send({ firstName: 'Nelkin', lastName: 'Eldho', email: 'nelkin@example.com', password: '123456' })
       .end((err, res) => {
         expect(res).to.have.status(200);
         expect(res.body).to.have.property('message', 'Form submitted successfully');
@@ -39,7 +39,7 @@ describe('Bike App API', () => {
     chai.request(app)
       .post('/submit')
       .type('form')
-      .send({ firstName: 'John' })
+      .send({ firstName: 'Nelkin' })
       .end((err, res) => {
         expect(res).to.have.status(400);
         expect(res.body).to.have.property('error', 'All fields are required');
@@ -61,13 +61,13 @@ it('POST /submit should return 400 for duplicate email', async () => {
   await chai.request(app)
     .post('/submit')
     .type('form')
-    .send({ firstName: 'John', lastName: 'Doe', email: 'john@example.com', password: '123456' });
+    .send({ firstName: 'Nelkin', lastName: 'Eldho', email: 'nelkin@example.com', password: '123456' });
 
   // Try submitting again with same email
   const res = await chai.request(app)
     .post('/submit')
     .type('form')
-    .send({ firstName: 'Jane', lastName: 'Smith', email: 'john@example.com', password: 'abcdef' });
+    .send({ firstName: 'Nelkin', lastName: 'Eldho', email: 'nelkin@example.com', password: 'abcdef' });
 
   expect(res).to.have.status(400);
   expect(res.body).to.have.property('error', 'Email already exists');
@@ -75,7 +75,7 @@ it('POST /submit should return 400 for duplicate email', async () => {
 
   // Invalid Email Format
   it('POST /submit should return 400 for invalid email format', (done) => {
-    const user = { firstName: 'Alice', lastName: 'Smith', email: 'invalid-email', password: '123456' };
+    const user = { firstName: 'John', lastName: 'Wick', email: 'invalid-email', password: '123456' };
     chai.request(app)
       .post('/submit')
       .type('form')
