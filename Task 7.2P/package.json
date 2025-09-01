@@ -1,0 +1,43 @@
+{
+ "name": "sit725-2025-t2-prac3",
+ "version": "1.0.0",
+ "description": "sit 725 week 3 prac",
+ "main": "server.js",
+ "scripts": {
+  "start": "node server.js",
+  "test": "mocha --reporter spec"
+ },
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/nelkin01/SIT725-2025.git"
+ },
+ "keywords": [
+  "Nodejs",
+  "Express",
+  "Materialize",
+  "HTML",
+  "JS",
+  "CSS"
+ ],
+ "author": "Nelkin Eldho",
+ "license": "MIT",
+ "bugs": {
+  "url": "https://github.com/nelkin01/SIT725-2025.git"
+ },
+ "homepage": "https://github.com/nelkin01/SIT725-2025.git",
+ "dependencies": {
+  "body-parser": "^2.2.0",
+  "cors": "^2.8.5",
+  "express": "^5.1.0",
+  "mongodb": "^6.18.0",
+  "mongoose": "^8.17.0",
+  "socket.io": "^4.8.1"
+ },
+ "devDependencies": {
+  "chai": "^4.3.7",
+  "chai-http": "^4.3.0",
+  "mocha": "^11.7.1",
+  "request": "^2.88.2",
+  "supertest": "^7.1.4"
+ }
+}
